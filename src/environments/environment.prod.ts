@@ -1,4 +1,4 @@
-const baseUrl = 'http://localhost:8000/api';
+const baseUrl = 'https://mini-car-inventory.herokuapp.com/api';
 export const environment = {
   production: true,
   addManufacturerURL: baseUrl+'/add-manufacturer',
