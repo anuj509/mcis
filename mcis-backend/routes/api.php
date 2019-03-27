@@ -16,8 +16,8 @@ use Illuminate\Http\Request;
 // Route::middleware('auth:api')->get('/user', function (Request $request) {
 //     return $request->user();
 // });
-Route::group(['middleware' => 'cors'], function()
-{
 Route::get('get-manufacturers','ManufacturerController@index');
 Route::post('add-manufacturer','ManufacturerController@store');
-});
+Route::post('add-model','ModelController@store');
+Route::get('view-inventory','Inventorycontroller@index');
+Route::post('mark-as-sold','Inventorycontroller@markAsSold');
